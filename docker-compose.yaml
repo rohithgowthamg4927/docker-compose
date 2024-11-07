@@ -1,0 +1,19 @@
+version "3.7"
+
+services:
+  httpd:
+    image: httpd:latest
+    container_name: httpd-server
+    ports:
+      - "8081:80"
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "8082:80" 
+
+  hello_world:
+    container_name: hello_world
+    image: hello-world:latest
+    
